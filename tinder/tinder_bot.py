@@ -12,9 +12,7 @@ class TinderBot():
     def login(self):
         self.driver.get('https://tinder.com')
 
-        sleep(6)
-
-        #WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[@type = 'button' and @aria-label = 'Log in with Facebook']//span"))).click()
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[@type = 'button' and @aria-label = 'Log in with Facebook']//span"))).click()
 
         # switch to login popup
         base_window = bot.driver.window_handles[0]
