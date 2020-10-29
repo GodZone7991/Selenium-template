@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 import pynder
 from helpers import get_access_token, get_login_credentials
 from io_helper import save_image
-#rvasiliev30@gmail.com
-#capitanmarvel96
 
 email, password, FBID = get_login_credentials()
 FBTOKEN = get_access_token(email, password)
